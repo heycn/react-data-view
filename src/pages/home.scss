@@ -15,14 +15,6 @@
     align-items: center;
     background: linear-gradient(45deg, #ffffff00 0%, #04135f 50%, #ffffff00 100%);
     font-size: px(50);
-    position: relative;
-
-    >.tag {
-      position: absolute;
-      font-size: px(26);
-      bottom: 4px;
-      right: px(100);
-    }
   }
 
   >main {
@@ -129,6 +121,31 @@
       .chart {
         flex: 1;
         width: 100%;
+      }
+
+      .legend {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        padding: 0 px(20) px(10);
+
+        >.first,
+        >.second {
+          display: inline-block;
+          width: px(18);
+          height: px(12);
+          background: red;
+          margin: 0 px(10);
+        }
+
+        .first {
+          background: linear-gradient(90deg, #2034f9 0%, #04a1ff 100%);
+        }
+
+        .second {
+          background: linear-gradient(90deg, #b92ae8 0%, #6773e7 100%);
+        }
       }
     }
   }

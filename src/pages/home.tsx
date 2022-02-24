@@ -7,8 +7,7 @@ export const Home = () => {
   return (
     <div className='home'>
       <header>
-        <span className='title'>新冠肺炎疫情数据可视化大屏监控</span>
-        <div className='tag'>免责声明：数据均为虚构，请以官方实时数据为准！</div>
+        <span className='title'>广州市公安局可视化指挥系统</span>
       </header>
       <main>
         <section className='section1'>
