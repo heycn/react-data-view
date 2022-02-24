@@ -1,6 +1,9 @@
 @import "../shared/helper";
 
 .home {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 
   header {
     height: px(100);
@@ -17,6 +20,40 @@
       font-size: px(26);
       bottom: 0;
       right: px(100);
+    }
+  }
+
+  >main {
+    flex: 1;
+    border: 1px solid red;
+    display: grid;
+    grid-template:
+      "box1 box2 box4 box5"755fr
+      "box3 box3 box4 box5"363fr / 366fr 361fr 811fr 747fr;
+
+    >.section1 {
+      grid-area: box1;
+      background: #aaa;
+    }
+
+    >.section2 {
+      grid-area: box2;
+      background: #6d6d6d;
+    }
+
+    >.section3 {
+      grid-area: box3;
+      background: #f0e992;
+    }
+
+    >.section4 {
+      grid-area: box4;
+      background: #ffb6b6;
+    }
+
+    >.section5 {
+      grid-area: box5;
+      background: #a0c6ff;
     }
   }
 }
