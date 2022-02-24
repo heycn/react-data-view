@@ -4,21 +4,22 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  color: #fff;
 
   header {
-    height: px(100);
+    height: px(120);
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(45deg, #ffffff00 0%, #04135f 50%, #ffffff00 100%);
-    font-size: px(48);
+    font-size: px(50);
     position: relative;
 
     >.tag {
       position: absolute;
       font-size: px(26);
-      bottom: 0;
+      bottom: 4px;
       right: px(100);
     }
   }
@@ -27,34 +28,81 @@
     flex: 1;
     display: grid;
     grid-template:
-      "box1 box2 box4 box5"755fr
-      "box3 box3 box4 box5"363fr / 366fr 361fr 811fr 747fr;
+      "box1 box2 box4 box5"755fr "box3 box3 box4 box5"363fr / 366fr 361fr 811fr 747fr;
     grid-column-gap: px(28);
     grid-row-gap: px(28);
 
+    >section {
+      text-align: center;
+    }
+
+    .border {
+      border: 1px solid #0764bc;
+      border-radius: 4px;
+      position: relative;
+      box-shadow: 0 0 2px 0 #0e325f, inset 0 0 2px 0 #0e325f;
+      background: #010e1c;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 4px;
+        box-shadow:
+          17px 0 0 -16px #0e325f,
+          -17px 0 0 -16px #0e325f,
+          0 17px 0 -16px #0e325f,
+          0 -17px 0 -16px #0e325f,
+          9px 0 0 -8px #0d4483,
+          -9px 0 0 -8px #0d4483,
+          0 9px 0 -8px #0d4483,
+          0 -9px 0 -8px #0d4483;
+      }
+    }
+
     >.section1 {
       grid-area: box1;
-      background: #aaa;
     }
 
     >.section2 {
       grid-area: box2;
-      background: #6d6d6d;
     }
 
     >.section3 {
       grid-area: box3;
-      background: #f0e992;
     }
 
     >.section4 {
       grid-area: box4;
-      background: #ffb6b6;
     }
 
     >.section5 {
       grid-area: box5;
-      background: #a0c6ff;
+    }
+
+    .管辖统计 {
+      height: px(315);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h2 {
+        flex-shrink: 0;
+        border: 1px solid #0a5299;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        font-size: px(24);
+        padding: px(4) px(18);
+        text-shadow: 0 0px(3) white;
+      }
+
+      .chart {
+        flex: 1;
+        width: 100%;
+      }
     }
   }
 }

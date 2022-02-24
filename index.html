@@ -6,11 +6,11 @@
       name="viewport"
       content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
     />
-    <title>疫情分布图 - 非官方</title>
+    <title>可视化疫情图监控大屏：非官方</title>
     <script>
       const clientWidth = document.documentElement.clientWidth;
       const clientHeight = document.documentElement.clientHeight;
-      let pageWidth = clientWidth / clientHeight > 16 / 9 ? clientHeight * (16 / 9) : clientWidth;
+      window.pageWidth = clientWidth / clientHeight > 16 / 9 ? clientHeight * (16 / 9) : clientWidth;
       const pageHeight = pageWidth / (16 / 9);
       const string = `<style>html{
         font-size: ${pageWidth / 100}px
