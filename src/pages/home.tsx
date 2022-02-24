@@ -7,7 +7,7 @@ export const Home = () => {
   return (
     <div className='home'>
       <header>
-        <span className='title'>广州市公安局可视化指挥系统</span>
+        <span className='title'>广州公安数据可视化系统</span>
       </header>
       <main>
         <section className='section1'>
