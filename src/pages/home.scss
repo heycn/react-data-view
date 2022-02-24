@@ -1,7 +1,19 @@
 @import "../shared/helper";
 
-.x {
-  width: px(367);
-  height: px(315);
-  border: 1px solid red;
+header {
+  height: px(100);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #ffffff00 0%, #04135f 50%, #ffffff00 100%);
+  font-size: px(48);
+  position: relative;
+
+  >.tag {
+    position: absolute;
+    font-size: px(26);
+    bottom: 0;
+    right: px(100);
+  }
 }
