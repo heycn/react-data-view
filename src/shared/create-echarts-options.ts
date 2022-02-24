@@ -14,7 +14,7 @@ export const createEchartsOptions = options => {
   if (!options?.yAxis?.axisLabel?.fontSize) {
     result.yAxis = result.yAxis || {};
     result.yAxis.axisLabel = result.yAxis.axisLabel || {};
-    result.yAxis.axisLabel.fontSize = px(12);
+    result.yAxis.axisLabel.fontSize = px(14);
   }
   return result;
 };

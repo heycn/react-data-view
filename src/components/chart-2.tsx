@@ -11,14 +11,13 @@ export const Chart2 = () => {
       createEchartsOptions({
         xAxis: {
           type: 'value',
-          boundaryGap: [0, 0.01],
-          splitLine: { show: false },
-          axisLabel: { show: false }
+          boundaryGap: [0, 0.1],
         },
         grid: {
           x: px(60),
           y: px(20),
-          y2: px(20)
+          x2: px(0),
+          y2: px(50)
         },
         yAxis: {
           type: 'category',
