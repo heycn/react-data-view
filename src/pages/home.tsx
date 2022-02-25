@@ -7,6 +7,7 @@ import { Chart5 } from '../components/chart-5';
 import { Chart6 } from '../components/chart-6';
 import { Chart7 } from '../components/chart-7';
 import { Chart8 } from '../components/chart-8';
+import { Chart9 } from '../components/chart-9';
 import './home.scss';
 
 export const Home = () => {
@@ -41,6 +42,7 @@ export const Home = () => {
             <h2>案发街道统计</h2>
             <div className='charts'>
               <Chart8 />
+              <Chart9 />
             </div>
           </div>
           <div className='border row3 作案手段'>

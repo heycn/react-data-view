@@ -108,7 +108,6 @@
     .案发时段,
     .战果,
     .籍贯,
-    .年龄段,
     .案发类型,
     .案发街道,
     .作案手段 {
@@ -144,27 +143,10 @@
       height: px(363);
     }
 
-    .年龄段 {
+    .chart9 {
+      flex: 1;
       display: flex;
       flex-direction: column;
-      height: px(363);
-
-      >.charts {
-        width: 100%;
-        flex: 1;
-        border: 1px solid red;
-        display: flex;
-        padding: px(30);
-      }
-
-      &-图1,
-      &-图2,
-      &-图3 {
-        flex: 1;
-        border: 1px solid red;
-        display: flex;
-        flex-direction: column;
-      }
     }
 
     .籍贯 {
@@ -243,7 +225,7 @@
         border-bottom: none;
         border-radius: 50%;
         overflow: hidden;
-        animation: spin infinite 5s linear;
+        animation: spin infinite 3s linear;
 
         >.radar {
           border: 4px solid #103142;
