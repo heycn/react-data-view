@@ -13,7 +13,7 @@ export const Chart4 = () => {
           x: px(10),
           x2: px(20),
           y: px(20),
-          y2: px(20)
+          y2: px(40)
         },
         xAxis: {
           type: 'category',
@@ -27,7 +27,7 @@ export const Chart4 = () => {
           type: 'value',
           splitLine: { lineStyle: { color: '#073E78' } },
           axisLabel: {
-            formatter(val) {
+            formatter(val: number) {
               return val * 100 + '%';
             }
           }

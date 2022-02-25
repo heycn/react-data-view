@@ -35,7 +35,7 @@ export const Chart2 = () => {
             '番禺区公安局'
           ],
           axisLabel: {
-            formatter(val) {
+            formatter(val: string) {
               return val.replace('公安局', '\n公安局');
             }
           }

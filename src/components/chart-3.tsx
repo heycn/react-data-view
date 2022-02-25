@@ -34,7 +34,7 @@ export const Chart3 = () => {
           type: 'value',
           splitLine: { lineStyle: { color: '#073E78' } },
           axisLabel: {
-            formatter(val) {
+            formatter(val: number) {
               return val * 100 + '%';
             }
           }
