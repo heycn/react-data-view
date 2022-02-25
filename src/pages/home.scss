@@ -20,6 +20,8 @@
   >main {
     flex: 1;
     display: grid;
+    width: px(2420);
+    margin: 0 auto;
     grid-template:
       "box1 box2 box4 box5"755fr "box3 box3 box4 box5"363fr / 366fr 361fr 811fr 747fr;
     grid-column-gap: px(28);
@@ -130,5 +132,15 @@
         }
       }
     }
+  }
+
+  >footer {
+    height: px(40);
+    margin-top: px(8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: px(22);
+    background: #060025;
   }
 }

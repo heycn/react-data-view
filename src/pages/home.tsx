@@ -19,6 +19,7 @@ export const Home = () => {
         <section className='border section4'></section>
         <section className='border section5'></section>
       </main>
+      <footer>© heycn 2022 - 免责声明：本页数据仅供参考 请以官方数据为准</footer>
     </div>
   );
 };
