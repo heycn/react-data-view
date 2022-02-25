@@ -25,7 +25,7 @@ export const Chart3 = () => {
         xAxis: {
           type: 'category',
           boundaryGap: false,
-          data: [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018],
+          data: [2017, 2018, 2019, 2020, 2021],
           splitLine: { show: true, lineStyle: { color: '#073E78' } },
           axisTick: { show: false },
           axisLine: { show: false }
@@ -77,7 +77,7 @@ export const Chart3 = () => {
 
   return (
     <div className='bordered 发案趋势'>
-      <h2>发案趋势分析</h2>
+      <h2>近五年发案趋势分析</h2>
       <div ref={divRef} className='chart' />
     </div>
   );
