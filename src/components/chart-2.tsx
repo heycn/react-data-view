@@ -2,12 +2,38 @@ import React, { useEffect, useRef } from 'react';
 import * as echarts from 'echarts';
 import { px } from '../shared/px';
 import { createEchartsOptions } from '../shared/create-echarts-options';
+import { baseEchartOptions } from '../shared/base-echart-options';
 
 export const Chart2 = () => {
   const divRef = useRef(null);
+  const myChart = useRef(null);
+  const data = [
+    { name: '越秀区公安局', 2011: 2, 2012: 3 },
+    { name: '海珠区公安局', 2011: 2, 2012: 3 },
+    { name: '天河区公安局', 2011: 2, 2012: 3 },
+    { name: '荔湾区公安局', 2011: 2, 2012: 3 },
+    { name: '白云区公安局', 2011: 2, 2012: 3 },
+    { name: '黄埔区公安局', 2011: 2, 2012: 3 },
+    { name: '花都区公安局', 2011: 2, 2012: 3 },
+    { name: '番禺区公安局', 2011: 2, 2012: 3 }
+  ];
   useEffect(() => {
-    var myChart = echarts.init(divRef.current);
-    myChart.setOption(
+    setInterval(() => {
+      const newData = [
+        { name: '越秀区公安局', 2011: 2, 2012: Math.random() * 10 },
+        { name: '海珠区公安局', 2011: 2, 2012: 3 },
+        { name: '天河区公安局', 2011: 2, 2012: 3 },
+        { name: '荔湾区公安局', 2011: 2, 2012: 3 },
+        { name: '白云区公安局', 2011: 2, 2012: 3 },
+        { name: '黄埔区公安局', 2011: 2, 2012: 3 },
+        { name: '花都区公安局', 2011: 2, 2012: 3 },
+        { name: '番禺区公安局', 2011: 2, 2012: 3 }
+      ];
+      x(newData);
+    }, 1000);
+  }, []);
+  const x = data => {
+    myChart.current.setOption(
       createEchartsOptions({
         grid: {
           x: px(80),
@@ -24,18 +50,9 @@ export const Chart2 = () => {
         yAxis: {
           axisTick: { show: false },
           type: 'category',
-          data: [
-            '越秀区公安局',
-            '海珠区公安局',
-            '天河区公安局',
-            '荔湾区公安局',
-            '白云区公安局',
-            '黄埔区公安局',
-            '花都区公安局',
-            '番禺区公安局'
-          ],
+          data: data.map(i => i.name),
           axisLabel: {
-            formatter(val: string) {
+            formatter(val) {
               return val.replace('公安局', '\n公安局');
             }
           }
@@ -44,17 +61,17 @@ export const Chart2 = () => {
           {
             name: '2011年',
             type: 'bar',
-            data: [1, 2, 3, 4, 5, 6, 7, 8],
+            data: data.map(i => i[2011]),
             itemStyle: {
               normal: {
                 color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
                   {
                     offset: 0,
-                    color: '#2034f9'
+                    color: '#2034F9'
                   },
                   {
                     offset: 1,
-                    color: '#04a1ff'
+                    color: '#04A1FF'
                   }
                 ])
               }
@@ -63,17 +80,17 @@ export const Chart2 = () => {
           {
             name: '2012年',
             type: 'bar',
-            data: [2, 3, 4, 5, 6, 7, 8, 9],
+            data: data.map(i => i[2012]),
             itemStyle: {
               normal: {
                 color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
                   {
                     offset: 0,
-                    color: '#b92ae8'
+                    color: '#B92AE8'
                   },
                   {
                     offset: 1,
-                    color: '#6773e7'
+                    color: '#6773E7'
                   }
                 ])
               }
@@ -82,10 +99,14 @@ export const Chart2 = () => {
         ]
       })
     );
+  };
+  useEffect(() => {
+    myChart.current = echarts.init(divRef.current);
+    x(data);
   }, []);
 
   return (
-    <div className='border 破获排名'>
+    <div className='bordered 破获排名'>
       <h2>案件破获排名</h2>
       <div ref={divRef} className='chart' />
       <div className='legend'>
