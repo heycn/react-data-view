@@ -10,7 +10,7 @@ export const Chart4 = () => {
     myChart.setOption(
       createEchartsOptions({
         grid: {
-          x: px(10),
+          x: px(55),
           x2: px(20),
           y: px(20),
           y2: px(40)

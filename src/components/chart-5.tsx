@@ -9,17 +9,17 @@ export const Chart5 = () => {
           <tr>
             <th>年份</th>
             <th>破案数</th>
-            <th>抓获嫌疑人</th>
+            <th>抓捕人数</th>
             <th>并串案件</th>
             <th>现勘录入</th>
             <th>视侦录入</th>
-            <th>合成案件数</th>
+            <th>合成案件</th>
             <th>合计</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>2015</td>
+            <td>2019</td>
             <td>2</td>
             <td>3</td>
             <td>4</td>
@@ -29,7 +29,7 @@ export const Chart5 = () => {
             <td>8</td>
           </tr>
           <tr>
-            <td>2016</td>
+            <td>2020</td>
             <td>2</td>
             <td>3</td>
             <td>4</td>
@@ -39,7 +39,7 @@ export const Chart5 = () => {
             <td>8</td>
           </tr>
           <tr>
-            <td>2017</td>
+            <td>2021</td>
             <td>2</td>
             <td>3</td>
             <td>4</td>
