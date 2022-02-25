@@ -120,6 +120,45 @@
       height: px(753);
       background: transparent;
 
+      >.formWrapper {
+        display: flex;
+        justify-content: space-around;
+
+        div {
+          margin-top: px(64);
+          width: px(200);
+          height: px(100);
+          border: 1px solid #1552ad;
+          background: rgba(31, 59, 70, 0.35);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-size: px(18);
+          color: #25bee4;
+          position: relative;
+
+          p {
+            margin-bottom: px(2);
+            font-size: px(36);
+            color: rgb(255, 255, 255);
+          }
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            box-shadow: 7px 0 0 -6px #103852,
+              -7px 0 0 -6px #103852,
+              0 7px 0 -6px #103852,
+              0 -7px 0 -6px #103852, ;
+          }
+        }
+      }
+
       >.wrapper {
         position: relative;
         width: 100%;
@@ -137,6 +176,7 @@
           right: px(10);
         }
       }
+
     }
 
     .战果 {

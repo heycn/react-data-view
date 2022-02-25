@@ -3,6 +3,7 @@ import * as echarts from 'echarts';
 import { createEchartsOptions } from '../shared/create-echarts-options';
 import { px } from '../shared/px';
 import china from '../geo/china.json';
+import { Statistic } from './Statistic';
 
 export const Chart6 = () => {
   const divRef = useRef(null);
@@ -37,6 +38,7 @@ export const Chart6 = () => {
   return (
     <div className='bordered 籍贯'>
       <h2>全市犯罪人员籍贯分布地</h2>
+      <Statistic />
       <div className='wrapper'>
         <div ref={divRef} className='chart' />
         <div className='notes'>此地图仅显示了中国的部分区域</div>
