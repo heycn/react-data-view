@@ -4,6 +4,7 @@ import { Chart2 } from '../components/chart-2';
 import { Chart3 } from '../components/chart-3';
 import { Chart4 } from '../components/chart-4';
 import { Chart5 } from '../components/chart-5';
+import { Chart6 } from '../components/chart-6';
 import './home.scss';
 
 export const Home = () => {
@@ -24,7 +25,9 @@ export const Home = () => {
         <section className='border section3'>
           <Chart5 />
         </section>
-        <section className='border section4'></section>
+        <section className='section4'>
+          <Chart6 />
+        </section>
         <section className='border section5'></section>
       </main>
       <footer>© heycn 2022 - 免责声明：本页数据仅供参考 请以官方数据为准</footer>
