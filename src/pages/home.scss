@@ -78,6 +78,7 @@
 
     >.section4 {
       grid-area: box4;
+
     }
 
     >.section5 {
@@ -117,30 +118,31 @@
     }
 
     .籍贯 {
-      height: px(1000);
+      height: 100%;
       background: transparent;
+      position: relative;
 
       >.formWrapper {
         display: flex;
         justify-content: space-around;
 
         div {
-          margin-top: px(64);
-          width: px(200);
-          height: px(100);
+          margin-top: px(72);
+          width: px(300);
+          height: px(120);
           border: 1px solid #1552ad;
           background: rgba(31, 59, 70, 0.35);
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          font-size: px(18);
+          font-size: px(22);
           color: #25bee4;
           position: relative;
 
           p {
             margin-bottom: px(2);
-            font-size: px(36);
+            font-size: px(42);
             color: rgb(255, 255, 255);
           }
 
@@ -172,11 +174,89 @@
 
         .notes {
           position: absolute;
-          bottom: px(80);
+          bottom: px(60);
           right: px(10);
+        }
+
+      }
+
+
+
+      >.ring {
+        border: 1px solid #0c2939;
+        position: absolute;
+        bottom: px(148);
+        left: px(148);
+        width: px(124);
+        height: px(124);
+        border-bottom: none;
+        border-radius: 50%;
+        overflow: hidden;
+        animation: spin infinite 5s linear;
+
+        >.radar {
+          border: 4px solid #103142;
+          position: absolute;
+          width: px(88);
+          height: px(88);
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: 50%;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: px(44);
+            height: px(44);
+            border: 4px solid #082132;
+            border-radius: 50%;
+          }
+
+          &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: px(2);
+            height: px(32);
+            z-index: 1;
+            background: #007cc0;
+            border-radius: 50%;
+            box-shadow: 0 0 5px 1px #0094e4,
+              -3px -10px 5px 1px #0094e4,
+              -7px -15px 10px 1px #0094e4,
+              -3px -3px 10px 1px #0094e4,
+              -7px -7px 20px 1px #0094e4,
+              -11px -11px 30px 1px #0094e4,
+              -11px -11px 40px 1px #0094e4,
+              -11px -11px 30px 1px #0094e4,
+              -11px -11px 30px 1px #0094e4;
+          }
         }
       }
 
+      @keyframes spin {
+        from {
+          transform: rotate(0);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      >span {
+        font-size: px(22);
+        position: absolute;
+        bottom: px(88);
+        left: px(128);
+        color: #eee;
+      }
     }
 
     .战果 {

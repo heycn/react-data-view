@@ -20,33 +20,33 @@ export const Chart5 = () => {
         <tbody>
           <tr>
             <td>2019</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
+            <td>10010</td>
+            <td>999</td>
+            <td>123</td>
+            <td>987</td>
+            <td>111</td>
+            <td>333</td>
+            <td>10086</td>
           </tr>
           <tr>
             <td>2020</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
+            <td>10086</td>
+            <td>888</td>
+            <td>456</td>
+            <td>654</td>
+            <td>222</td>
+            <td>222</td>
+            <td>12315</td>
           </tr>
           <tr>
             <td>2021</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
+            <td>12315</td>
+            <td>777</td>
+            <td>789</td>
+            <td>321</td>
+            <td>333</td>
+            <td>111</td>
+            <td>10010</td>
           </tr>
         </tbody>
       </table>

@@ -42,6 +42,10 @@ export const Chart6 = () => {
         <div ref={divRef} className='chart' />
         <div className='notes'>此地图仅显示了中国的部分区域</div>
       </div>
+      <div className='ring'>
+        <div className='radar' />
+      </div>
+      <span>数据实时监控中</span>
     </div>
   );
 };
