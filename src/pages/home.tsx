@@ -5,8 +5,9 @@ import { Chart3 } from '../components/chart-3';
 import { Chart4 } from '../components/chart-4';
 import { Chart5 } from '../components/chart-5';
 import { Chart6 } from '../components/chart-6';
-import './home.scss';
 import { Chart7 } from '../components/chart-7';
+import { Chart8 } from '../components/chart-8';
+import './home.scss';
 
 export const Home = () => {
   return (
@@ -38,7 +39,9 @@ export const Home = () => {
           </div>
           <div className='border row2 案发街道'>
             <h2>案发街道统计</h2>
-            <div className='charts'></div>
+            <div className='charts'>
+              <Chart8 />
+            </div>
           </div>
           <div className='border row3 作案手段'>
             <h2>作案手段分析</h2>
