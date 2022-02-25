@@ -1,5 +1,6 @@
 import React from 'react';
 import { Chart1 } from '../components/chart-1';
+import { Chart10 } from '../components/chart-10';
 import { Chart2 } from '../components/chart-2';
 import { Chart3 } from '../components/chart-3';
 import { Chart4 } from '../components/chart-4';
@@ -47,6 +48,7 @@ export const Home = () => {
           </div>
           <div className='border row3 作案手段'>
             <h2>作案手段分析</h2>
+            <Chart10 />
           </div>
         </section>
       </main>

@@ -3,8 +3,7 @@ import * as echarts from 'echarts';
 import { createEchartsOptions } from '../shared/create-echarts-options';
 import { px } from '../shared/px';
 import china from '../geo/china.json';
-import { Statistic } from './Statistic';
-
+import { Statistic } from './statistic';
 export const Chart6 = () => {
   const divRef = useRef(null);
   useEffect(() => {

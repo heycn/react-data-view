@@ -143,11 +143,11 @@
       height: px(363);
     }
 
-    .chart9 {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
+    // .chart9 {
+    //   flex: 1;
+    //   display: flex;
+    //   flex-direction: column;
+    // }
 
     .籍贯 {
       height: 100%;
@@ -292,10 +292,15 @@
       }
     }
 
-    .战果 {
+    .战果,
+    .作案手段 {
+      padding: 0 px(24);
+
       >table {
         border-collapse: collapse;
-        margin: px(36) auto;
+        width: 100%;
+        table-layout: fixed;
+        margin-top: px(12);
 
         th,
         td {
@@ -316,6 +321,16 @@
             background: #1c2456;
           }
 
+        }
+      }
+    }
+
+    .作案手段 {
+      >table {
+        tbody {
+          td {
+            height: px(30);
+          }
         }
       }
     }
