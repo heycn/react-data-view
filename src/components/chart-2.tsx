@@ -8,26 +8,26 @@ export const Chart2 = () => {
   const divRef = useRef(null);
   const myChart = useRef(null);
   const data = [
-    { name: '越秀区公安局', 2011: 2, 2012: 3 },
-    { name: '海珠区公安局', 2011: 2, 2012: 3 },
-    { name: '天河区公安局', 2011: 2, 2012: 3 },
-    { name: '荔湾区公安局', 2011: 2, 2012: 3 },
-    { name: '白云区公安局', 2011: 2, 2012: 3 },
-    { name: '黄埔区公安局', 2011: 2, 2012: 3 },
-    { name: '花都区公安局', 2011: 2, 2012: 3 },
-    { name: '番禺区公安局', 2011: 2, 2012: 3 }
+    { name: '越秀区公安局', 2020: 2, 2021: 3 },
+    { name: '海珠区公安局', 2020: 2, 2021: 3 },
+    { name: '天河区公安局', 2020: 2, 2021: 3 },
+    { name: '荔湾区公安局', 2020: 2, 2021: 3 },
+    { name: '白云区公安局', 2020: 2, 2021: 3 },
+    { name: '黄埔区公安局', 2020: 2, 2021: 3 },
+    { name: '花都区公安局', 2020: 2, 2021: 3 },
+    { name: '番禺区公安局', 2020: 2, 2021: 3 }
   ];
   useEffect(() => {
     setInterval(() => {
       const newData = [
-        { name: '越秀区公安局', 2011: 2, 2012: Math.random() * 10 },
-        { name: '海珠区公安局', 2011: 2, 2012: 3 },
-        { name: '天河区公安局', 2011: 2, 2012: 3 },
-        { name: '荔湾区公安局', 2011: 2, 2012: 3 },
-        { name: '白云区公安局', 2011: 2, 2012: 3 },
-        { name: '黄埔区公安局', 2011: 2, 2012: 3 },
-        { name: '花都区公安局', 2011: 2, 2012: 3 },
-        { name: '番禺区公安局', 2011: 2, 2012: 3 }
+        { name: '越秀区公安局', 2020: Math.random() * 10, 2021: Math.random() * 10 },
+        { name: '海珠区公安局', 2020: Math.random() * 10, 2021: Math.random() * 10 },
+        { name: '天河区公安局', 2020: Math.random() * 10, 2021: Math.random() * 10 },
+        { name: '荔湾区公安局', 2020: Math.random() * 10, 2021: Math.random() * 10 },
+        { name: '白云区公安局', 2020: Math.random() * 10, 2021: Math.random() * 10 },
+        { name: '黄埔区公安局', 2020: Math.random() * 10, 2021: Math.random() * 10 },
+        { name: '花都区公安局', 2020: Math.random() * 10, 2021: Math.random() * 10 },
+        { name: '番禺区公安局', 2020: Math.random() * 10, 2021: Math.random() * 10 }
       ];
       x(newData);
     }, 1000);
@@ -59,9 +59,9 @@ export const Chart2 = () => {
         },
         series: [
           {
-            name: '2011年',
+            name: '2020年',
             type: 'bar',
-            data: data.map(i => i[2011]),
+            data: data.map(i => i[2020]),
             itemStyle: {
               normal: {
                 color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
@@ -78,9 +78,9 @@ export const Chart2 = () => {
             }
           },
           {
-            name: '2012年',
+            name: '2021年',
             type: 'bar',
-            data: data.map(i => i[2012]),
+            data: data.map(i => i[2021]),
             itemStyle: {
               normal: {
                 color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
