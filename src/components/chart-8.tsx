@@ -6,15 +6,13 @@ import { px } from '../shared/px';
 export const Chart8 = () => {
   const divRef = useRef(null);
   const data = [
-    { value: 0.08, name: '东岗路' },
-    { value: 0.06, name: '段家滩' },
-    { value: 0.11, name: '雁北' },
-    { value: 0.09, name: '五泉山' },
-    { value: 0.12, name: '中山路' },
-    { value: 0.06, name: '庆阳路' },
-    { value: 0.08, name: '武都路' },
-    { value: 0.08, name: '酒泉路' },
-    { value: 0.08, name: '天水路' }
+    { value: 0.08, name: '五山路' },
+    { value: 0.06, name: '新塘路' },
+    { value: 0.11, name: '白云' },
+    { value: 0.12, name: '龙洞' },
+    { value: 0.08, name: '科学城' },
+    { value: 0.08, name: '越秀' },
+    { value: 0.08, name: '花都湖' }
   ];
   useEffect(() => {
     var myChart = echarts.init(divRef.current);
