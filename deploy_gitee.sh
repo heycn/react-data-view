@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-yarn build &&
+yarn build --base ./ &&
 cd dist &&
 git init &&
 git add . &&
